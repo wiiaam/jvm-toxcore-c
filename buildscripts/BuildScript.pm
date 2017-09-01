@@ -80,7 +80,7 @@ sub tempd(&) {
 sub must_system {
    show \@_;
    (system @_) == 0
-      or die "Error while executing '@_'";
+      or die "Error '$!' while executing '@_'";
 }
 
 sub must_popen {
